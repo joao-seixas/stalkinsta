@@ -1,14 +1,14 @@
 'use client'
 
 import styles from "./page.module.css";
-import { useState, useRef } from 'react';
+import { useRef } from 'react';
 
 export default function Login() {
     const login = useRef(null);
     const password = useRef(null);
 
     function sessionInit() {
-        fetch('http://localhost:3000/api/instagram', {headers: {'login' : login.current.value, 'password' : password.current.value}})
+        fetch('/api/instagram', {headers: {'login' : login.current.value, 'password' : password.current.value}})
             .then(data => data.json())
             .then(json => console.log(json));
     }

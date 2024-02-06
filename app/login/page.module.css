@@ -1,0 +1,63 @@
+.mainContainer {
+    display: flex;
+    align-items: center;
+}
+
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: auto;
+    width: min(300px, 80%);
+    height: min(300px, 80%);
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 10px 10px 13px -6px rgba(0,0,0,0.75);
+}
+
+.loginTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 1rem;
+}
+
+.loginInput {
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem;
+    width: 80%;
+}
+
+.loginButton {
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem;
+    width: 80%;
+    background-color: rgba(255, 255, 255);
+    box-shadow: 6px 6px 13px -6px rgba(0,0,0,0.75);
+    transition: transform 0.3s linear;
+    transition: box-shadow 0.3s linear;
+}
+
+.loginButton:hover {
+    box-shadow: 5px 5px 13px -6px rgba(0,0,0,0.75);
+    cursor: pointer;
+    transform: translate(1px, 1px);
+    transition: transform 0.5s linear;
+    transition: box-shadow 0.5s linear;
+}
+
+.loginButton:active {
+    background-color: lightblue;
+}
+
+.loginInstructions {
+    font-size: 0.7rem;
+    margin-top: 1.5rem;
+    text-align: center;
+}

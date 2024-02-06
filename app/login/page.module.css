@@ -1,6 +1,7 @@
 .mainContainer {
     display: flex;
     align-items: center;
+    height: 100svh;
 }
 
 .loginContainer {
